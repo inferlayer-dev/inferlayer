@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>inferlayer — llm prompt routing and caching</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 720px; margin: 4rem auto; padding: 0 1rem; color: #111; }
+    h1 { font-size: 2rem; }
+    p { line-height: 1.6; color: #333; }
+    a { color: #0366d6; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; border-radius: 6px; }
+    footer { margin-top: 3rem; font-size: 0.9rem; color: #666; }
+  </style>
+</head>
+<body>
+  <h1>inferlayer</h1>
+  <p>a lightweight python library for routing llm prompts across providers and caching responses for cost and latency optimization.</p>
+  <p>
+    <a href="https://github.com/inferlayer-dev/inferlayer">github</a> ·
+    <a href="mailto:contact@inferlayer.xyz">contact@inferlayer.xyz</a>
+  </p>
+  <h2>install</h2>
+  <pre>pip install inferlayer</pre>
+  <h2>usage</h2>
+  <pre>from inferlayer import InferLayer
+
+layer = InferLayer(providers=["openai", "anthropic"])
+print(layer.ask("explain tcp vs udp"))</pre>
+  <footer>mit licensed. built for developers.</footer>
+</body>
+</html>
